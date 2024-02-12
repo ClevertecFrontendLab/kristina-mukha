@@ -1,0 +1,1 @@
+export { LogoSmallComponent } from './LogoSmallComponent';

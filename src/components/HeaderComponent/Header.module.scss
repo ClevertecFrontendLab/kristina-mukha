@@ -1,0 +1,61 @@
+.header {
+    .breadcrumb {
+        margin-bottom: 14px;
+        &Item {
+            color: #262626;
+            font-size: 14px;
+            line-height: 130%;
+        }
+    }
+
+    .headerContent {
+        display: flex;
+
+        .title {
+            padding-right: 140px;
+            color: #262626;
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 130%;
+
+            @media screen and (max-width: 834px) {
+                padding-right: 0;
+                font-weight: 500;
+                font-size: 24px;
+            }
+
+            @media screen and (max-width: 360px) {
+                font-size: 20px;
+            }
+        }
+
+        .btnSettings {
+            @media screen and (max-width: 834px) {
+                display: none;
+            }
+        }
+
+        .btnSettingsLaptop {
+            display: none;
+
+            @media screen and (max-width: 834px) {
+                display: block;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 130%;
+            }
+
+            @media screen and (max-width: 360px) {
+                display: none;
+            }
+        }
+
+        .btnSettingsMobile {
+            display: none;
+
+            @media screen and (max-width: 360px) {
+                display: block;
+            }
+        }
+    }
+}
