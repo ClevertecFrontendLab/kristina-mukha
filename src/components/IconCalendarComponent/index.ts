@@ -1,0 +1,1 @@
+export { IconCalendarComponent } from './IconCalendarComponent';
