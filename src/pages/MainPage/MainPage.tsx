@@ -3,7 +3,6 @@ import { Button, Card, Layout, Typography } from 'antd';
 import {
     AndroidFilled,
     AppleFilled,
-    CalendarTwoTone,
     HeartFilled,
     IdcardOutlined,
     MenuFoldOutlined,
@@ -21,6 +20,8 @@ import { IconExitComponent } from '../../components/IconExitComponent';
 import { MenuComponent } from '../../components/MenuComponent';
 import { HeaderComponent } from '../../components/HeaderComponent';
 import { MenuMobileComponent } from '@components/MenuMobileComponent';
+import { IconCalendarComponent } from '@components/IconCalendarComponent';
+// import { menuItemsArray } from '@components/menuItemsArray';
 
 export const MainPage: React.FC = () => {
     const [collapsed, setCollapsed] = useState(false);
@@ -202,10 +203,9 @@ export const MainPage: React.FC = () => {
                                     bordered={false}
                                 >
                                     <div className='cardActionsContent'>
-                                        <CalendarTwoTone
-                                            twoToneColor='#2f54eb'
-                                            style={{ marginRight: 8 }}
-                                        />
+                                        <span className='spanIconCalendar'>
+                                            <IconCalendarComponent />
+                                        </span>
                                         <span style={{ color: '#2f54eb' }}>Календарь</span>
                                     </div>
                                 </Card>

@@ -330,3 +330,11 @@ html {
 .testBlock {
     height: 100vh;
 }
+.spanIconCalendar {
+    margin-right: 8px;
+    svg {
+        path {
+            fill: #2f54eb;
+        }
+    }
+}
