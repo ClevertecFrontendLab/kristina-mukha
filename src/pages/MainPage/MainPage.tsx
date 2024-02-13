@@ -54,32 +54,33 @@ export const MainPage: React.FC = () => {
                                 )}
                             </div>
 
-                            <div className='testBlock' data-test-id='sider-switch'>
-                                {' '}
-                                {collapsed ? (
-                                    <div
-                                        className='sidebarSwitcher sidebarSwitcherCollapsed'
-                                        onClick={() => setCollapsed(!collapsed)}
-                                    >
-                                        <Button
-                                            className='btnSidebarSwitcher'
-                                            type='text'
-                                            icon={<MenuUnfoldOutlined />}
-                                        />
-                                    </div>
-                                ) : (
-                                    <div
-                                        className='sidebarSwitcher'
-                                        onClick={() => setCollapsed(!collapsed)}
-                                    >
-                                        <Button
-                                            className='btnSidebarSwitcher'
-                                            type='text'
-                                            icon={<MenuFoldOutlined />}
-                                        />
-                                    </div>
-                                )}
-                            </div>
+                            {/* <div className='testBlock' data-test-id='sider-switch'> */}
+                            {collapsed ? (
+                                <div
+                                    data-test-id='sider-switch'
+                                    className='sidebarSwitcher sidebarSwitcherCollapsed'
+                                    onClick={() => setCollapsed(!collapsed)}
+                                >
+                                    <Button
+                                        className='btnSidebarSwitcher'
+                                        type='text'
+                                        icon={<MenuUnfoldOutlined />}
+                                    />
+                                </div>
+                            ) : (
+                                <div
+                                    data-test-id='sider-switch'
+                                    className='sidebarSwitcher'
+                                    onClick={() => setCollapsed(!collapsed)}
+                                >
+                                    <Button
+                                        className='btnSidebarSwitcher'
+                                        type='text'
+                                        icon={<MenuFoldOutlined />}
+                                    />
+                                </div>
+                            )}
+                            {/* </div> */}
                         </Sider>
                     </div>
 
@@ -111,33 +112,33 @@ export const MainPage: React.FC = () => {
                                     </div>
                                 </>
                             )}
-
-                            <div className='testBlock' data-test-id='sider-switch-mobile'>
-                                {' '}
-                                {collapsed ? (
-                                    <div
-                                        className='sidebarSwitcher sidebarSwitcherCollapsed sidebarSwitcherCollapsedMobile'
-                                        onClick={() => setCollapsed(!collapsed)}
-                                    >
-                                        <Button
-                                            className='btnSidebarSwitcher'
-                                            type='text'
-                                            icon={<MenuUnfoldOutlined />}
-                                        />
-                                    </div>
-                                ) : (
-                                    <div
-                                        className='sidebarSwitcher sidebarSwitcherMobile'
-                                        onClick={() => setCollapsed(!collapsed)}
-                                    >
-                                        <Button
-                                            className='btnSidebarSwitcher'
-                                            type='text'
-                                            icon={<MenuFoldOutlined />}
-                                        />
-                                    </div>
-                                )}
-                            </div>
+                            {/* <div className='testBlock' data-test-id='sider-switch-mobile'> */}
+                            {collapsed ? (
+                                <div
+                                    data-test-id='sider-switch-mobile'
+                                    className='sidebarSwitcher sidebarSwitcherCollapsed sidebarSwitcherCollapsedMobile'
+                                    onClick={() => setCollapsed(!collapsed)}
+                                >
+                                    <Button
+                                        className='btnSidebarSwitcher'
+                                        type='text'
+                                        icon={<MenuUnfoldOutlined />}
+                                    />
+                                </div>
+                            ) : (
+                                <div
+                                    data-test-id='sider-switch-mobile'
+                                    className='sidebarSwitcher sidebarSwitcherMobile'
+                                    onClick={() => setCollapsed(!collapsed)}
+                                >
+                                    <Button
+                                        className='btnSidebarSwitcher'
+                                        type='text'
+                                        icon={<MenuFoldOutlined />}
+                                    />
+                                </div>
+                            )}
+                            {/* </div> */}
                         </Sider>
                     </div>
 

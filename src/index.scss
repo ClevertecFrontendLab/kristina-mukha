@@ -89,6 +89,9 @@ html {
     align-items: center;
     @media screen and (max-width: 360px) {
         top: 24px;
+        width: 32px;
+        height: 48px;
+        background-image: url('../src/assets/img/backgrounds/sidebarSwitcherBig.png');
     }
 
     .btnSidebarSwitcher {
@@ -96,13 +99,21 @@ html {
         margin: 0;
         width: 12px;
         height: 12px;
-
         display: flex;
         padding-left: 4px;
+        @media screen and (max-width: 360px) {
+            width: 16px;
+            height: 16px;
+            padding-left: 7px;
+        }
 
         svg {
             width: 12px;
             height: 12px;
+            @media screen and (max-width: 360px) {
+                width: 16px;
+                height: 16px;
+            }
         }
     }
 }
