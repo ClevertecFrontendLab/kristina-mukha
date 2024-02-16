@@ -1,0 +1,1 @@
+export { EmployeeProfileTabs } from './EmployeeProfileTabs';
